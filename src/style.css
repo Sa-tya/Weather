@@ -1,0 +1,67 @@
+body {
+    font-family: monospace sans-serif;
+    background-image: url('./assets/w4.jpg');
+    background-size: cover;
+}
+.head {
+    /* background-color: bisque; */
+    margin: 25px 0;
+    
+}
+header {
+    padding: 25px;
+    /* background-color: slateblue; */
+    color: thistle;
+    text-shadow: 2px 2px black;
+}
+input {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid slateblue;
+}
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid slateblue;
+    color: slateblue;
+    font-weight: bolder;
+}
+.container1 {
+    background-color: snow;
+    border: 1px solid currentColor;
+    width: 400px;
+    padding: 30px;
+    margin: 10px auto;
+    background-image: url('./assets/w1.jpeg');
+    background-size: cover;
+}
+.innerContainer {
+    display: flex;
+    
+    justify-content: space-around;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    
+}
+.weather div {
+    margin: 0 5px;
+    /* color: white; */
+    background-image: url('./assets/w2.jpg');
+    background-size: cover;
+}
+.weather {
+    display: flex;
+    margin:  25px auto;
+    justify-content: center;
+    flex-flow: row wrap;
+
+}
+.pseudo {
+    width: 150px;
+    height: 150px;
+}
