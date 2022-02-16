@@ -1,7 +1,7 @@
 import { useState } from "react";
 import './style.css'
 function App() {
-    const [city, setCity] = useState('Patna');
+    const [city, setCity] = useState('');
     const [locationData, setLocationData] = useState('')
     const [forecast, setForecast] = useState([])
     const [img, setImg] = useState('')
@@ -29,7 +29,7 @@ function App() {
             <h1><strong>Today's Weather</strong></h1>
             <h3>Check weather of any major city</h3>
         </header>
-        <div className='head'>
+        <div className= {city ? 'head':'head1'}>
             <input
                 type='text'
                 value={city}
@@ -76,9 +76,9 @@ function App() {
                                 <h5> {forecast[i].temp_c}</h5>
                             </div> : '')}
                 </div>
-            </> : "Place Not Found"}
+            </> : ""}
             <footer>
-                <h3>Information is provide by <a href='https://www.weatherapi.com/'><strong>Weather API</strong></a></h3>
+                <h3>Weather information is provide by :- <a href='https://www.weatherapi.com/'><strong>Weather API</strong></a></h3>
             </footer>
     </section>
 }

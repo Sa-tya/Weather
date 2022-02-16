@@ -4,15 +4,17 @@ body {
     background-size: cover;
 }
 .head {
-    /* background-color: bisque; */
     margin: 25px 0;
-    
+}
+.head1 {
+    min-height: calc(95vh - 195px);
+    margin: 25px 0;
 }
 header {
     padding: 25px;
     /* background-color: slateblue; */
-    color: thistle;
-    text-shadow: 2px 2px black;
+    color: blueviolet;
+    /* text-shadow: 2px 2px black; */
 }
 input {
     padding: 10px;
@@ -39,17 +41,15 @@ button {
 }
 .innerContainer {
     display: flex;
-    
     justify-content: space-around;
 }
 
 img {
     height: 150px;
     width: 150px;
-    
 }
 .weather div {
-    margin: 0 5px;
+    margin: 5px 5px;
     /* color: white; */
     background-image: url('./assets/w2.jpg');
     background-size: cover;
@@ -64,4 +64,8 @@ img {
 .pseudo {
     width: 150px;
     height: 150px;
+}
+footer {
+    border: 2px solid black;
+    background-color: burlywood;
 }
